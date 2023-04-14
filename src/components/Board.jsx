@@ -1,22 +1,25 @@
 import {Button} from './Button';
 
 export default function Board () {
+  const handler = () => {
+    alert('[board]: opa!')
+  }
   return (
     <>
       <div>
-        <Button value="o" />
-        <Button value="x" />
-        <Button value="o" />
+        <Button value="" meuClick={handler} />
+        <Button value="" meuClick={handler} />
+        <Button value="" meuClick={handler} />
       </div>
       <div>
-        <Button value="x" />
-        <Button value="o" />
-        <Button value="x" />
+        <Button value="" meuClick={handler} />
+        <Button value="" meuClick={handler} />
+        <Button value="" meuClick={handler} />
       </div>
       <div>
-        <Button value="x" />
-        <Button value="x" />
-        <Button value="o" />
+        <Button value="" meuClick={handler} />
+        <Button value="" meuClick={handler} />
+        <Button value="" meuClick={handler} />
       </div>
     </>
   )
