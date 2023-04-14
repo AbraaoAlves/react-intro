@@ -1,9 +1,19 @@
 
 const style = {
-  color: 'red'
+  color: 'red',
+  width: 25,
+  height: 25,
+
 } 
 
-export function Button({value}) {
-  return <button style={style} className="square">{value}</button> 
+
+export function Button({value, meuClick}) {
+  
+  const meuhandler = () => {
+    meuClick();
+    console.log('[button]: opa!')
+  }
+
+  return <button onClick={meuhandler} style={style} className="square">{value}</button> 
 }
 
