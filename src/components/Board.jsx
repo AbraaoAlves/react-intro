@@ -2,7 +2,7 @@ import {Button} from './Button';
 
 export default function Board () {
   const handler = () => {
-    alert('[board]: opa!')
+    
   }
   return (
     <>
