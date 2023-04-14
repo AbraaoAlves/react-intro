@@ -1,14 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-
-function App() {
-  return <>Olá mundo</>
-}
-
+import Board from './components/Board'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Board />
   </React.StrictMode>,
 )
