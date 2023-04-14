@@ -1,4 +1,4 @@
-
+import {useState} from 'react'
 const style = {
   color: 'red',
   width: 25,
@@ -8,12 +8,19 @@ const style = {
 
 
 export function Button({value, meuClick}) {
-  
+  const  [meuValor, updateMeuValor] = useState(value);
+   
   const meuhandler = () => {
+    updateMeuValor('X');
     meuClick();
-    console.log('[button]: opa!')
   }
 
-  return <button onClick={meuhandler} style={style} className="square">{value}</button> 
+  return <button 
+      onClick={meuhandler} 
+      style={style} 
+      className="square"
+      >
+        {meuValor}
+  </button> 
 }
 
